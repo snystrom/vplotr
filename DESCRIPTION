@@ -1,0 +1,23 @@
+Package: vplotr
+Type: Package
+Title: A tool for making V-plots at genomic loci
+Version: 0.1.0
+Authors@R: person("Spencer", "Nystrom", 
+    email = "nystromdev@gmail.com", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0003-1000-1579"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: A small package that interfaces with the `vplot` commandline tool 
+    to make vplot matrices for MNase-seq and CUT&RUN data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    cmdfun,
+    GenomicRanges,
+    magrittr,
+    rtracklayer
+SystemRequirements: vplot <https://github.com/snystrom/vplot>
+Remotes: 
+    snystrom/cmdfun
+RoxygenNote: 7.1.1
