@@ -28,10 +28,10 @@ remotes::install_github("snystrom/vplotr")
 ## Example
 
 vplotr only has 1 function: `vplot_matrix` which takes genomic
-coordinates and the position of each read midpoint in a bam file,
-returning a matrix where columns are genomic coordinates, and rows
-correspond to the fragment size of the read (larger fragments are at the
-top of the matrix).
+coordinates and a bam file, returning a matrix where columns are genomic
+coordinates, and rows correspond to the fragment size of the read
+(larger fragments are at the top of the matrix). Points on the plot
+represent the midpoint of the sequenced fragment.
 
 ``` r
 library(vplotr)
